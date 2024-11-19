@@ -32,7 +32,7 @@ export default function CharacterDelete({ option, character }: { option:string, 
       <Button onPress={onOpen} color="danger" variant="light">
         {option}
       </Button>
-      <Modal isOpen={isOpen} placement="top-center" size="xs" onOpenChange={onOpenChange}>
+      <Modal isOpen={isOpen} placement="center" size="xs" onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>

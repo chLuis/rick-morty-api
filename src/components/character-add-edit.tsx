@@ -46,7 +46,7 @@ export default function CharacterAddEdit({option, character}:{option: string, ch
   return (
     <>
       <Button onPress={onOpen} color="primary" variant="solid">{option}</Button>
-      <Modal isOpen={isOpen} placement="top-center" onOpenChange={onOpenChange}>
+      <Modal isOpen={isOpen} placement="bottom-center" onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
@@ -54,7 +54,7 @@ export default function CharacterAddEdit({option, character}:{option: string, ch
                 <form onSubmit={(e) => handleSubmit(e)}>
               <ModalBody>
                   <div className="flex flex-col gap-4">
-                    <Input type="text" required maxLength={36} name="name" label="Nombre" autoFocus defaultValue={character?.name || ""} />
+                    <Input type="text" required maxLength={36} name="name" label="Nombre" defaultValue={character?.name || ""} />
                     <Input type="text" required maxLength={120} name="image" label="Imagen" defaultValue={character?.image || ""} />
                     <Input type="text" required maxLength={36} name="species" label="Especie" defaultValue={character?.species || ""} />
                     <Input type="text" required maxLength={36} name="status" label="Estado" defaultValue={character?.status || ""} />
