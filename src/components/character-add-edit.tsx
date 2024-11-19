@@ -46,7 +46,7 @@ export default function CharacterAddEdit({option, character}:{option: string, ch
   return (
     <>
       <Button onPress={onOpen} color="primary" variant="solid">{option}</Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal isOpen={isOpen} placement="top-center" onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
