@@ -7,7 +7,7 @@ import Card from "../components/card";
 import Navigation from "../components/navigation";
 import CharacterAddEdit from "../components/character-add-edit";
 import CharacterDelete from "../components/character-delete";
-import CharacterPagination from "./character-pagination";
+import CharacterPagination from "../components/character-pagination";
 import GoToTopButton from "../components/go-to-top-button";
 import { Input } from "@nextui-org/react";
 
